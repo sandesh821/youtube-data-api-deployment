@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube Data Visualization</title>
+</head>
+<body>
+	<h1>Enter YouTube Channel IDs and Select Chart Type</h1>
+	<form method="POST" action="/">
+		<label for="channel_ids">Enter YouTube Channel IDs (separated by spaces):</label><br>
+		<input type="text" id="channel_ids" name="channel_ids"><br><br>
+		<label for="chart_type">Select Chart Type:</label><br>
+		<input type="radio" id="subscriber_count" name="chart_type" value="subscriber_count">
+		<label for="subscriber_count">Subscriber Count</label><br>
+		<input type="radio" id="view_count" name="chart_type" value="view_count">
+		<label for="view_count">View Count</label><br><br>
+		<input type="submit" value="Generate Chart">
+	</form>
+</body>
+</html>
